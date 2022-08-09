@@ -28,9 +28,9 @@ public class ProfileActivity extends AppCompatActivity {
         String email = getIntent().getStringExtra("email");
         String phone = getIntent().getStringExtra("phone");
 
-        tvName.setText(name);
+/*        tvName.setText(name);
         tvEmail.setText(email);
-        tvPhone.setText(phone);
+        tvPhone.setText(phone);*/
 
         btnLogout.setOnClickListener(v -> {
 

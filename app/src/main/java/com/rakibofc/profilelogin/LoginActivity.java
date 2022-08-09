@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    public EditText etName, etEmail, etPhone, etPassword;
+    public EditText etEmail, etPassword;
 
     public Button btnLogin;
 
@@ -23,9 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        etName = findViewById(R.id.etName);
         etEmail = findViewById(R.id.etEmail);
-        etPhone = findViewById(R.id.etPhone);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
 
@@ -38,9 +36,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 Intent loginIntent = new Intent(getApplicationContext(), ProfileActivity.class);
 
-                loginIntent.putExtra("name", etName.getText().toString());
                 loginIntent.putExtra("email", etEmail.getText().toString());
-                loginIntent.putExtra("phone", etPhone.getText().toString());
 
                 startActivity(loginIntent);
                 finish();
