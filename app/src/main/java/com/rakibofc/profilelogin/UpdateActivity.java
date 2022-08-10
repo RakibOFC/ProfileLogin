@@ -24,9 +24,6 @@ public class UpdateActivity extends AppCompatActivity {
         etPhone = findViewById(R.id.etPhone);
 
         btnUpdate = findViewById(R.id.btnUpdate);
-        btnCancel = findViewById(R.id.btnCancel);
-
-        btnCancel.setOnClickListener(v -> onBackPressed());
 
         btnUpdate.setOnClickListener(v -> {
 

@@ -6,17 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:contentDescription="@string/login_logo"
-        android:src="@drawable/login" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:autofillHints="emailAddress"
-            android:hint="@string/enter_your_email"
+            android:hint="Email"
             android:inputType="textEmailAddress"
             android:padding="10dp" />
 
@@ -66,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:hint="Enter your password"
+            android:hint="Password"
             android:inputType="textPassword"
             android:padding="10dp" />
 
