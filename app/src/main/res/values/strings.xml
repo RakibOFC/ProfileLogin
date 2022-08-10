@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProfileLogin</string>
+    <string name="app_name">Login App</string>
     <string name="login_logo">Login Logo</string>
     <string name="email">Email</string>
     <string name="enter_your_email">Enter your email</string>
@@ -7,4 +7,11 @@
     <string name="welcome">Welcome</string>
     <string name="logout">Logout</string>
     <string name="update">Update</string>
+    <string name="home">Home</string>
+    <string name="back">Back</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="phone">Phone</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_your_phone">Enter your phone</string>
 </resources>

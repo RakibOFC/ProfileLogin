@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public Button btnLogin;
 
-    public String dbEmail, dbPassword;
+    public static String dbEmail, dbPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +32,15 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(view -> {
 
-            if (dbEmail.equals(etEmail.getText().toString()) && dbPassword.equals(etPassword.getText().toString())){
+            String inputEmail = etEmail.getText().toString().trim();
+            String inputPassword = etPassword.getText().toString().trim();
+
+            if (dbEmail.equals(inputEmail) && dbPassword.equals(inputPassword)){
 
                 Intent loginIntent = new Intent(getApplicationContext(), ProfileActivity.class);
 
-                loginIntent.putExtra("email", etEmail.getText().toString());
-
+                loginIntent.putExtra("userLogin", true);
+                loginIntent.putExtra("email", inputEmail);
                 startActivity(loginIntent);
                 finish();
 

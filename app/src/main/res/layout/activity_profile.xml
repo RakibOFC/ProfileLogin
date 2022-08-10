@@ -70,4 +70,5 @@
             android:text="@string/logout" />
 
     </LinearLayout>
+
 </LinearLayout>
